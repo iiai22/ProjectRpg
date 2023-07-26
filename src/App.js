@@ -8,7 +8,12 @@ export default function App() {
         <h1 className="title">
           <span>H</span>ello StackBlitz!
         </h1>
-        <p>Start editing to see some magic happen :)</p>
+        <p
+          contentEditable="true"
+          className="edit"
+          data-placeholder="Edit me"
+          id="editMe"
+        ></p>
       </div>
     </div>
   );

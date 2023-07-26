@@ -4,12 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: aliceblue;
 }
 
 html {
   background-color: rgb(21, 21, 22);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -17,7 +16,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   width: 90vw;
-  height: 120vh;
+  height: 90vh;
   position: relative;
   top: 10vh;
   left: 5vw;
@@ -56,6 +55,22 @@ h1,
 span {
   color: rgb(21, 21, 22);
   font-size: 5rem;
+}
+
+/*----------TextBox----------*/
+
+.edit {
+  margin-right: 2rem;
+  max-height: 100%;
+  caret-color: currentColor;
+  outline: solid 0px transparent;
+  font-weight: 500;
+  color: rgb(21, 21, 22);
+}
+
+.edit:empty:before {
+  content: attr(data-placeholder);
+  color: rgba(32, 32, 34, 0.699);
 }
 
 /*----------Scroll----------*/
